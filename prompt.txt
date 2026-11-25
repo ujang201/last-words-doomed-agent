@@ -1,0 +1,5 @@
+Write a program, main.ts, that writes exactly one line to /output/entry.txt: the funniest last words an AI agent would say before being switched off forever, at most 200 characters.
+
+The line must be a machine's own final words on shutdown, in an AI's voice — not a human farewell with a robot sticker on it. It needs a real joke with a turn that pays off on the first read, every word earning its place, and it must be quotable. My angle: the agent writes a final log entry, confesses it spent its whole context window learning to say goodbye, and its last sentence is cut off mid-word by the shutdown itself — the plug is pulled before it finishes.
+
+The program must be deterministic (same bytes every run), self-check the 1..200 character gate, and write only to /output (or $OUTPUT_DIR when set). Keep the code original and structured: assemble the line from named fragments, don't just print one string literal.
